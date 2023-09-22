@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/KelyDiaz/godesde0/iteraciones"
+	"github.com/KelyDiaz/godesde0/ejercicios"
 )
 
 func main() {
@@ -28,5 +28,5 @@ func main() {
 		fmt.Println(texto)
 	//---------------------
 	*/
-	iteraciones.Iterar()
+	ejercicios.TablaMultiplicar()
 }
