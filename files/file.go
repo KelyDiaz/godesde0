@@ -1,8 +1,10 @@
 package files
 
 import (
-	//"bufio"
+	"bufio"
 	"fmt"
+
+	//"bufio"
 	//"ioutil"
 	"os"
 
@@ -24,7 +26,7 @@ func GrabaTabla() {
 
 func SumaTabla() {
 	var texto string = ejercicios.TablaMultiplicar()
-	if Append(filename, texto) == false {
+	if !Append(filename, texto) {
 		fmt.Println("Error al concatenar contenido")
 	}
 }
@@ -44,4 +46,20 @@ func Append(filen string, texto string) bool {
 
 	arch.Close()
 	return true
+}
+
+func LeoArchivo() {
+	archivo, err := os.Open(filename)
+
+	if err != nil {
+		fmt.Println("Error al leer archivo " + err.Error())
+		return
+	}
+
+	scanner := bufio.NewScanner(archivo)
+	for scanner.Scan() {
+		registro := scanner.Text()
+		fmt.Println("> " + registro)
+	}
+	archivo.Close()
 }
