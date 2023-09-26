@@ -30,5 +30,6 @@ func main() {
 	*/
 	//files.GrabaTabla()
 	//files.LeoArchivo()
-	funciones.LlamarClosure()
+	//funciones.LlamarClosure()
+	funciones.Exponencia(2)
 }
