@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/KelyDiaz/godesde0/files"
+	"github.com/KelyDiaz/godesde0/funciones"
 )
 
 func main() {
@@ -29,6 +29,6 @@ func main() {
 	//---------------------
 	*/
 	//files.GrabaTabla()
-	files.LeoArchivo()
-
+	//files.LeoArchivo()
+	funciones.Calculos()
 }
