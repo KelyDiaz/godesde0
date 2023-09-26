@@ -30,5 +30,5 @@ func main() {
 	*/
 	//files.GrabaTabla()
 	//files.LeoArchivo()
-	funciones.Calculos()
+	funciones.LlamarClosure()
 }
